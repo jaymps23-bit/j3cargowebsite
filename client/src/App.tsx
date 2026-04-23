@@ -13,6 +13,7 @@ import Faq from "./pages/Faq";
 import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
 import Contact from "./pages/Contact";
+import Routes from "./pages/Routes";
 import { useEffect } from "react";
 import { useLocation } from "wouter";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -38,6 +39,7 @@ function Router() {
         <Route path="/faq" component={Faq} />
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogArticle} />
+        <Route path="/routes" component={Routes} />
         <Route path="/contact" component={Contact} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
