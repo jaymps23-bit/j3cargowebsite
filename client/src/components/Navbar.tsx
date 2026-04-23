@@ -27,20 +27,20 @@ export default function Navbar() {
   return (
     <>
       {/* Top bar */}
-      <div className="bg-forest text-white text-sm hidden md:block">
+      <div className="bg-navy text-white text-sm hidden md:block">
         <div className="container flex justify-between items-center py-2">
           <div className="flex items-center gap-6">
-            <a href={`tel:${BUSINESS.phone}`} className="flex items-center gap-1.5 hover:text-gold transition-colors">
+            <a href={`tel:${BUSINESS.phone}`} className="flex items-center gap-1.5 hover:text-sky transition-colors">
               <Phone className="w-3.5 h-3.5" />
               {BUSINESS.phone}
             </a>
-            <a href={`mailto:${BUSINESS.email}`} className="hover:text-gold transition-colors">
+            <a href={`mailto:${BUSINESS.email}`} className="hover:text-sky transition-colors">
               {BUSINESS.email}
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <a href={BUSINESS.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Instagram</a>
-            <a href={BUSINESS.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Facebook</a>
+            <a href={BUSINESS.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-sky transition-colors">Instagram</a>
+            <a href={BUSINESS.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-sky transition-colors">Facebook</a>
           </div>
         </div>
       </div>
@@ -71,8 +71,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                   location === link.href
-                    ? "text-forest bg-forest/5"
-                    : "text-foreground/70 hover:text-forest hover:bg-forest/5"
+                    ? "text-navy bg-navy/5"
+                    : "text-foreground/70 hover:text-navy hover:bg-navy/5"
                 }`}
               >
                 {link.label}
@@ -83,12 +83,12 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <Link href="/track">
-              <Button variant="outline" className="border-forest text-forest hover:bg-forest hover:text-white text-sm">
+              <Button variant="outline" className="border-navy text-navy hover:bg-navy hover:text-white text-sm">
                 Track Shipment
               </Button>
             </Link>
             <Link href="/contact">
-              <Button className="bg-gold hover:bg-gold-dark text-forest-dark font-semibold text-sm">
+              <Button className="bg-sky hover:bg-sky-dark text-navy-dark font-semibold text-sm">
                 Get a Quote
               </Button>
             </Link>
@@ -97,7 +97,7 @@ export default function Navbar() {
           {/* Mobile toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-forest"
+            className="lg:hidden p-2 text-navy"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -114,8 +114,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                     location === link.href
-                      ? "text-forest bg-forest/5"
-                      : "text-foreground/70 hover:text-forest hover:bg-forest/5"
+                      ? "text-navy bg-navy/5"
+                      : "text-foreground/70 hover:text-navy hover:bg-navy/5"
                   }`}
                 >
                   {link.label}
@@ -123,16 +123,16 @@ export default function Navbar() {
               ))}
               <div className="pt-4 space-y-2 border-t border-border mt-2">
                 <Link href="/track" className="block">
-                  <Button variant="outline" className="w-full border-forest text-forest">
+                  <Button variant="outline" className="w-full border-navy text-navy">
                     Track Shipment
                   </Button>
                 </Link>
                 <Link href="/contact" className="block">
-                  <Button className="w-full bg-gold hover:bg-gold-dark text-forest-dark font-semibold">
+                  <Button className="w-full bg-sky hover:bg-sky-dark text-navy-dark font-semibold">
                     Get a Quote
                   </Button>
                 </Link>
-                <a href={`tel:${BUSINESS.phone}`} className="flex items-center justify-center gap-2 py-2 text-sm text-forest">
+                <a href={`tel:${BUSINESS.phone}`} className="flex items-center justify-center gap-2 py-2 text-sm text-navy">
                   <Phone className="w-4 h-4" />
                   {BUSINESS.phone}
                 </a>

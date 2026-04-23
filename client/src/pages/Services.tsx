@@ -45,10 +45,10 @@ export default function Services() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-forest-dark text-white py-16 lg:py-20">
+      <section className="bg-navy-dark text-white py-16 lg:py-20">
         <div className="container">
           <div className="max-w-2xl">
-            <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Our Services</p>
+            <p className="text-sky font-semibold text-sm uppercase tracking-wider mb-3">Our Services</p>
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold mb-4">
               Shipping Solutions That Work
             </h1>
@@ -64,13 +64,13 @@ export default function Services() {
         <section
           key={service.id}
           id={service.id}
-          className={`py-20 lg:py-24 ${i % 2 === 0 ? "bg-white" : "bg-cream"}`}
+          className={`py-20 lg:py-24 ${i % 2 === 0 ? "bg-white" : "bg-slate-cool"}`}
         >
           <div className="container">
             <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${i % 2 !== 0 ? "lg:[direction:rtl]" : ""}`}>
               <SectionReveal>
                 <div className={i % 2 !== 0 ? "lg:[direction:ltr]" : ""}>
-                  <div className="w-14 h-14 rounded-2xl bg-forest/5 text-forest flex items-center justify-center mb-5">
+                  <div className="w-14 h-14 rounded-2xl bg-navy/5 text-navy flex items-center justify-center mb-5">
                     {ICON_MAP[service.icon]}
                   </div>
                   <h2 className="font-heading text-3xl font-bold text-foreground mb-4">{service.title}</h2>
@@ -79,13 +79,13 @@ export default function Services() {
                   <ul className="space-y-3 mb-8">
                     {service.features.map((feature, j) => (
                       <li key={j} className="flex items-center gap-3 text-sm text-foreground">
-                        <Check className="w-4 h-4 text-gold shrink-0" />
+                        <Check className="w-4 h-4 text-sky shrink-0" />
                         {feature}
                       </li>
                     ))}
                   </ul>
                   <Link href="/contact">
-                    <Button className="bg-gold hover:bg-gold-dark text-forest-dark font-semibold">
+                    <Button className="bg-sky hover:bg-sky-dark text-navy-dark font-semibold">
                       Get a Quote <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
@@ -106,7 +106,7 @@ export default function Services() {
       ))}
 
       {/* CTA */}
-      <section className="py-16 bg-forest text-white text-center">
+      <section className="py-16 bg-navy text-white text-center">
         <div className="container">
           <SectionReveal>
             <h2 className="font-heading text-3xl font-bold mb-4">Not Sure Which Service You Need?</h2>
@@ -115,7 +115,7 @@ export default function Services() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={BUSINESS.whatsapp} target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-gold hover:bg-gold-dark text-forest-dark font-bold px-8">
+                <Button size="lg" className="bg-sky hover:bg-sky-dark text-navy-dark font-bold px-8">
                   Chat on WhatsApp
                 </Button>
               </a>

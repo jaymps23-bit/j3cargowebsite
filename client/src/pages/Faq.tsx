@@ -19,10 +19,10 @@ export default function Faq() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-forest-dark text-white py-16 lg:py-20">
+      <section className="bg-navy-dark text-white py-16 lg:py-20">
         <div className="container">
           <div className="max-w-2xl">
-            <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">FAQ</p>
+            <p className="text-sky font-semibold text-sm uppercase tracking-wider mb-3">FAQ</p>
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold mb-4">
               Frequently Asked Questions
             </h1>
@@ -40,14 +40,14 @@ export default function Faq() {
             <div className="space-y-3">
               {FAQ_DATA.map((faq, i) => (
                 <SectionReveal key={i} delay={i * 50}>
-                  <div className="bg-cream rounded-xl border border-border overflow-hidden">
+                  <div className="bg-slate-cool rounded-xl border border-border overflow-hidden">
                     <button
                       onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                      className="w-full flex items-center justify-between p-5 text-left hover:bg-cream-dark/50 transition-colors"
+                      className="w-full flex items-center justify-between p-5 text-left hover:bg-slate-cool-dark/50 transition-colors"
                     >
                       <span className="font-heading font-semibold text-foreground pr-4">{faq.question}</span>
                       <ChevronDown
-                        className={`w-5 h-5 text-gold shrink-0 transition-transform duration-200 ${
+                        className={`w-5 h-5 text-sky shrink-0 transition-transform duration-200 ${
                           openIndex === i ? "rotate-180" : ""
                         }`}
                       />
@@ -64,14 +64,14 @@ export default function Faq() {
 
             {/* Still have questions */}
             <SectionReveal delay={200}>
-              <div className="mt-12 bg-forest rounded-2xl p-8 text-center text-white">
+              <div className="mt-12 bg-navy rounded-2xl p-8 text-center text-white">
                 <h3 className="font-heading text-2xl font-bold mb-3">Still Have Questions?</h3>
                 <p className="text-white/70 mb-6">
                   Our team is happy to help. Reach out via WhatsApp for the fastest response.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a href={BUSINESS.whatsapp} target="_blank" rel="noopener noreferrer">
-                    <Button className="bg-gold hover:bg-gold-dark text-forest-dark font-semibold">
+                    <Button className="bg-sky hover:bg-sky-dark text-navy-dark font-semibold">
                       <MessageCircle className="w-4 h-4 mr-2" /> WhatsApp Us
                     </Button>
                   </a>

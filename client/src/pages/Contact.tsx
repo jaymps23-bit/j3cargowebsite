@@ -16,10 +16,10 @@ export default function Contact() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-forest-dark text-white py-16 lg:py-20">
+      <section className="bg-navy-dark text-white py-16 lg:py-20">
         <div className="container">
           <div className="max-w-2xl">
-            <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Contact</p>
+            <p className="text-sky font-semibold text-sm uppercase tracking-wider mb-3">Contact</p>
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold mb-4">
               Get in Touch
             </h1>
@@ -41,46 +41,46 @@ export default function Contact() {
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-forest/5 text-forest flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-navy/5 text-navy flex items-center justify-center shrink-0">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="font-medium text-sm text-foreground mb-1">Phone</p>
-                      <a href={`tel:${BUSINESS.phone}`} className="text-muted-foreground text-sm hover:text-forest transition-colors">
+                      <a href={`tel:${BUSINESS.phone}`} className="text-muted-foreground text-sm hover:text-navy transition-colors">
                         {BUSINESS.phone}
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-forest/5 text-forest flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-navy/5 text-navy flex items-center justify-center shrink-0">
                       <MessageCircle className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="font-medium text-sm text-foreground mb-1">WhatsApp</p>
-                      <a href={BUSINESS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-forest transition-colors">
+                      <a href={BUSINESS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-navy transition-colors">
                         Chat with us on WhatsApp
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-forest/5 text-forest flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-navy/5 text-navy flex items-center justify-center shrink-0">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="font-medium text-sm text-foreground mb-1">Email</p>
-                      <a href={`mailto:${BUSINESS.email}`} className="text-muted-foreground text-sm hover:text-forest transition-colors block">
+                      <a href={`mailto:${BUSINESS.email}`} className="text-muted-foreground text-sm hover:text-navy transition-colors block">
                         {BUSINESS.email}
                       </a>
-                      <a href={`mailto:${BUSINESS.altEmail}`} className="text-muted-foreground text-sm hover:text-forest transition-colors block">
+                      <a href={`mailto:${BUSINESS.altEmail}`} className="text-muted-foreground text-sm hover:text-navy transition-colors block">
                         {BUSINESS.altEmail}
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-forest/5 text-forest flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-navy/5 text-navy flex items-center justify-center shrink-0">
                       <MapPin className="w-5 h-5" />
                     </div>
                     <div>
@@ -90,7 +90,7 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-forest/5 text-forest flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-navy/5 text-navy flex items-center justify-center shrink-0">
                       <Clock className="w-5 h-5" />
                     </div>
                     <div>
@@ -102,11 +102,11 @@ export default function Contact() {
                 </div>
 
                 {/* Quick action */}
-                <div className="mt-8 p-5 bg-forest rounded-xl text-white">
+                <div className="mt-8 p-5 bg-navy rounded-xl text-white">
                   <p className="font-heading font-semibold mb-2">Fastest Response?</p>
                   <p className="text-white/70 text-sm mb-4">WhatsApp us for the quickest reply, usually within minutes.</p>
                   <a href={BUSINESS.whatsapp} target="_blank" rel="noopener noreferrer">
-                    <Button className="w-full bg-gold hover:bg-gold-dark text-forest-dark font-semibold">
+                    <Button className="w-full bg-sky hover:bg-sky-dark text-navy-dark font-semibold">
                       <MessageCircle className="w-4 h-4 mr-2" /> Open WhatsApp
                     </Button>
                   </a>
@@ -117,7 +117,7 @@ export default function Contact() {
             {/* Quote Form */}
             <div className="lg:col-span-2">
               <SectionReveal delay={100}>
-                <div className="bg-cream rounded-2xl p-6 sm:p-8 border border-border">
+                <div className="bg-slate-cool rounded-2xl p-6 sm:p-8 border border-border">
                   <h2 className="font-heading text-2xl font-bold text-foreground mb-2">Request a Quote</h2>
                   <p className="text-muted-foreground text-sm mb-6">
                     Fill in the details below and we'll get back to you with a competitive rate. All fields marked are required.

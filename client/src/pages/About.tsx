@@ -16,10 +16,10 @@ export default function About() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-forest-dark text-white py-16 lg:py-20">
+      <section className="bg-navy-dark text-white py-16 lg:py-20">
         <div className="container">
           <div className="max-w-2xl">
-            <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">About Us</p>
+            <p className="text-sky font-semibold text-sm uppercase tracking-wider mb-3">About Us</p>
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold mb-4">
               The People Behind Your Parcels
             </h1>
@@ -43,7 +43,7 @@ export default function About() {
             </SectionReveal>
             <SectionReveal delay={150}>
               <div>
-                <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Our Story</p>
+                <p className="text-sky font-semibold text-sm uppercase tracking-wider mb-3">Our Story</p>
                 <h2 className="font-heading text-3xl font-bold text-foreground mb-6">
                   Born from Experience, Built on Trust
                 </h2>
@@ -65,11 +65,11 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-20 lg:py-24 bg-cream pattern-overlay">
+      <section className="py-20 lg:py-24 bg-slate-cool pattern-overlay">
         <div className="container relative z-10">
           <SectionReveal>
             <div className="text-center max-w-2xl mx-auto mb-14">
-              <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Our Values</p>
+              <p className="text-sky font-semibold text-sm uppercase tracking-wider mb-3">Our Values</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
                 What Drives Us Every Day
               </h2>
@@ -85,7 +85,7 @@ export default function About() {
             ].map((value, i) => (
               <SectionReveal key={i} delay={i * 100}>
                 <div className="bg-white rounded-2xl p-6 border border-border h-full">
-                  <div className="w-12 h-12 rounded-xl bg-forest/5 text-forest flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-navy/5 text-navy flex items-center justify-center mb-4">
                     {value.icon}
                   </div>
                   <h3 className="font-heading font-bold text-lg text-foreground mb-2">{value.title}</h3>
@@ -98,7 +98,7 @@ export default function About() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 bg-forest text-white">
+      <section className="py-16 bg-navy text-white">
         <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
@@ -109,7 +109,7 @@ export default function About() {
             ].map((stat, i) => (
               <SectionReveal key={i} delay={i * 80}>
                 <div>
-                  <p className="font-heading text-3xl md:text-4xl font-extrabold text-gold mb-1">{stat.number}</p>
+                  <p className="font-heading text-3xl md:text-4xl font-extrabold text-sky mb-1">{stat.number}</p>
                   <p className="text-white/60 text-sm">{stat.label}</p>
                 </div>
               </SectionReveal>
@@ -130,12 +130,12 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-gold hover:bg-gold-dark text-forest-dark font-bold px-8">
+                <Button size="lg" className="bg-sky hover:bg-sky-dark text-navy-dark font-bold px-8">
                   Get a Quote <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
               <Link href="/services">
-                <Button size="lg" variant="outline" className="border-forest text-forest hover:bg-forest hover:text-white font-semibold px-8">
+                <Button size="lg" variant="outline" className="border-navy text-navy hover:bg-navy hover:text-white font-semibold px-8">
                   View Services
                 </Button>
               </Link>

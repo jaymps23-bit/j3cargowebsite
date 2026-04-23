@@ -43,7 +43,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
             value={formData.name}
             onChange={handleChange}
             placeholder="Your full name"
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none transition-all"
           />
         </div>
         <div>
@@ -55,7 +55,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
             value={formData.email}
             onChange={handleChange}
             placeholder="you@example.com"
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none transition-all"
           />
         </div>
         <div>
@@ -67,7 +67,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
             value={formData.phone}
             onChange={handleChange}
             placeholder="+44 7XXX XXX XXX"
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none transition-all"
           />
         </div>
         <div>
@@ -76,7 +76,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
             name="mode"
             value={formData.mode}
             onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none transition-all"
           >
             <option value="Air Freight">Air Freight</option>
             <option value="Sea Freight">Sea Freight</option>
@@ -92,7 +92,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
             value={formData.pickup}
             onChange={handleChange}
             placeholder="e.g. Tottenham, London"
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none transition-all"
           />
         </div>
         <div>
@@ -103,7 +103,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
             value={formData.destination}
             onChange={handleChange}
             placeholder="e.g. Ikeja, Lagos"
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none transition-all"
           />
         </div>
         {!compact && (
@@ -115,7 +115,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
               value={formData.weight}
               onChange={handleChange}
               placeholder="Estimated weight in kg"
-              className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none transition-all"
+              className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none transition-all"
             />
           </div>
         )}
@@ -129,19 +129,19 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
             onChange={handleChange}
             rows={3}
             placeholder="Briefly describe what you are sending"
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none transition-all resize-none"
+            className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none transition-all resize-none"
           />
         </div>
       )}
       <Button
         type="submit"
-        className="w-full bg-gold hover:bg-gold-dark text-forest-dark font-semibold py-3 text-sm"
+        className="w-full bg-sky hover:bg-sky-dark text-navy-dark font-semibold py-3 text-sm"
         size="lg"
       >
         Send Quote Request via WhatsApp
       </Button>
       <p className="text-xs text-muted-foreground text-center">
-        Or call us directly: <a href="tel:+447823718667" className="text-forest font-medium hover:underline">+44 78 2371 8667</a>
+        Or call us directly: <a href="tel:+447823718667" className="text-navy font-medium hover:underline">+44 78 2371 8667</a>
       </p>
     </form>
   );

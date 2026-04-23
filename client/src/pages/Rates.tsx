@@ -82,10 +82,10 @@ export default function Rates() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-forest-dark text-white py-16 lg:py-20">
+      <section className="bg-navy-dark text-white py-16 lg:py-20">
         <div className="container">
           <div className="max-w-2xl">
-            <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Pricing</p>
+            <p className="text-sky font-semibold text-sm uppercase tracking-wider mb-3">Pricing</p>
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold mb-4">
               Transparent Shipping Rates
             </h1>
@@ -97,12 +97,12 @@ export default function Rates() {
       </section>
 
       {/* Rate info banner */}
-      <section className="bg-gold/10 border-b border-gold/20">
+      <section className="bg-sky/10 border-b border-sky/20">
         <div className="container py-4">
           <div className="flex items-start gap-3">
-            <Info className="w-5 h-5 text-gold shrink-0 mt-0.5" />
+            <Info className="w-5 h-5 text-sky shrink-0 mt-0.5" />
             <p className="text-sm text-foreground/80">
-              Rates shown are for <strong>air freight</strong> per kilogram. Minimum charge applies for shipments under 10kg. Volumetric weight may apply for lightweight, bulky items. For sea freight quotes, please <Link href="/contact" className="text-forest font-medium underline">contact us</Link>.
+              Rates shown are for <strong>air freight</strong> per kilogram. Minimum charge applies for shipments under 10kg. Volumetric weight may apply for lightweight, bulky items. For sea freight quotes, please <Link href="/contact" className="text-navy font-medium underline">contact us</Link>.
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function Rates() {
                   placeholder="Search state..."
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="pl-10 pr-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none w-full sm:w-64"
+                  className="pl-10 pr-4 py-2.5 rounded-lg border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none w-full sm:w-64"
                 />
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function Rates() {
             <div className="overflow-x-auto rounded-xl border border-border">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="bg-forest text-white">
+                  <tr className="bg-navy text-white">
                     <th className="text-left px-5 py-3.5 font-semibold">State</th>
                     <th className="text-right px-5 py-3.5 font-semibold">Delivery (£/kg)</th>
                     <th className="text-right px-5 py-3.5 font-semibold">Collection (£/kg)</th>
@@ -142,12 +142,12 @@ export default function Rates() {
                   {filteredRates.map((rate, i) => (
                     <tr
                       key={rate.state}
-                      className={`border-t border-border ${i % 2 === 0 ? "bg-white" : "bg-cream/50"} hover:bg-gold/5 transition-colors`}
+                      className={`border-t border-border ${i % 2 === 0 ? "bg-white" : "bg-slate-cool/50"} hover:bg-sky/5 transition-colors`}
                     >
                       <td className="px-5 py-3 font-medium text-foreground">{rate.state}</td>
                       <td className="px-5 py-3 text-right text-muted-foreground">£{rate.delivery.toFixed(2)}</td>
                       <td className="px-5 py-3 text-right text-muted-foreground">£{rate.collection.toFixed(2)}</td>
-                      <td className="px-5 py-3 text-right font-medium text-forest">£{rate.min}</td>
+                      <td className="px-5 py-3 text-right font-medium text-navy">£{rate.min}</td>
                     </tr>
                   ))}
                   {filteredRates.length === 0 && (
@@ -168,7 +168,7 @@ export default function Rates() {
       </section>
 
       {/* Fixed Item Rates */}
-      <section className="py-16 lg:py-20 bg-cream">
+      <section className="py-16 lg:py-20 bg-slate-cool">
         <div className="container">
           <SectionReveal>
             <h2 className="font-heading text-2xl font-bold text-foreground mb-2">Fixed-Price Items (to Lagos)</h2>
@@ -182,10 +182,10 @@ export default function Rates() {
               {FIXED_ITEMS.map((item) => (
                 <div
                   key={item.item}
-                  className="flex items-center justify-between bg-white rounded-xl px-5 py-4 border border-border hover:border-gold/30 transition-colors"
+                  className="flex items-center justify-between bg-white rounded-xl px-5 py-4 border border-border hover:border-sky/30 transition-colors"
                 >
                   <span className="text-sm text-foreground">{item.item}</span>
-                  <span className="font-heading font-bold text-forest text-lg">£{item.price}</span>
+                  <span className="font-heading font-bold text-navy text-lg">£{item.price}</span>
                 </div>
               ))}
             </div>
@@ -194,7 +194,7 @@ export default function Rates() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-forest text-white text-center">
+      <section className="py-16 bg-navy text-white text-center">
         <div className="container">
           <SectionReveal>
             <h2 className="font-heading text-3xl font-bold mb-4">Need a Custom Quote?</h2>
@@ -202,7 +202,7 @@ export default function Rates() {
               For sea freight, bulk shipments, or items not listed above, get in touch for a personalised quote.
             </p>
             <Link href="/contact">
-              <Button size="lg" className="bg-gold hover:bg-gold-dark text-forest-dark font-bold px-8">
+              <Button size="lg" className="bg-sky hover:bg-sky-dark text-navy-dark font-bold px-8">
                 Request a Quote <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>

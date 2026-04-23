@@ -31,10 +31,10 @@ export default function Track() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-forest-dark text-white py-16 lg:py-20">
+      <section className="bg-navy-dark text-white py-16 lg:py-20">
         <div className="container">
           <div className="max-w-2xl">
-            <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Tracking</p>
+            <p className="text-sky font-semibold text-sm uppercase tracking-wider mb-3">Tracking</p>
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold mb-4">
               Track Your Shipment
             </h1>
@@ -50,7 +50,7 @@ export default function Track() {
         <div className="container">
           <div className="max-w-2xl mx-auto">
             <SectionReveal>
-              <div className="bg-cream rounded-2xl p-8 border border-border">
+              <div className="bg-slate-cool rounded-2xl p-8 border border-border">
                 <form onSubmit={handleTrack} className="space-y-4">
                   <label className="block text-sm font-medium text-foreground/70 mb-1">Tracking Number</label>
                   <div className="flex gap-3">
@@ -61,10 +61,10 @@ export default function Track() {
                         value={trackingId}
                         onChange={(e) => setTrackingId(e.target.value)}
                         placeholder="Enter your tracking number"
-                        className="w-full pl-12 pr-4 py-3.5 rounded-xl border border-border bg-white text-sm focus:ring-2 focus:ring-forest/20 focus:border-forest outline-none"
+                        className="w-full pl-12 pr-4 py-3.5 rounded-xl border border-border bg-white text-sm focus:ring-2 focus:ring-navy/20 focus:border-navy outline-none"
                       />
                     </div>
-                    <Button type="submit" className="bg-forest hover:bg-forest-light text-white font-semibold px-6 py-3.5 shrink-0">
+                    <Button type="submit" className="bg-navy hover:bg-navy-light text-white font-semibold px-6 py-3.5 shrink-0">
                       Track
                     </Button>
                   </div>
@@ -74,12 +74,12 @@ export default function Track() {
                   <p className="text-sm text-muted-foreground mb-3">Don't have a tracking number? Contact us directly:</p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href={BUSINESS.whatsapp} target="_blank" rel="noopener noreferrer" className="flex-1">
-                      <Button variant="outline" className="w-full border-forest text-forest hover:bg-forest hover:text-white">
+                      <Button variant="outline" className="w-full border-navy text-navy hover:bg-navy hover:text-white">
                         <MessageCircle className="w-4 h-4 mr-2" /> WhatsApp Us
                       </Button>
                     </a>
                     <a href={`tel:${BUSINESS.phone}`} className="flex-1">
-                      <Button variant="outline" className="w-full border-border text-foreground hover:bg-cream">
+                      <Button variant="outline" className="w-full border-border text-foreground hover:bg-slate-cool">
                         Call {BUSINESS.phone}
                       </Button>
                     </a>
@@ -92,7 +92,7 @@ export default function Track() {
       </section>
 
       {/* How tracking works */}
-      <section className="py-16 lg:py-20 bg-cream pattern-overlay">
+      <section className="py-16 lg:py-20 bg-slate-cool pattern-overlay">
         <div className="container relative z-10">
           <SectionReveal>
             <div className="text-center max-w-2xl mx-auto mb-12">
@@ -114,7 +114,7 @@ export default function Track() {
             ].map((stage, i) => (
               <SectionReveal key={i} delay={i * 100}>
                 <div className="bg-white rounded-2xl p-6 border border-border text-center h-full">
-                  <div className="w-12 h-12 rounded-xl bg-forest/5 text-forest flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-navy/5 text-navy flex items-center justify-center mx-auto mb-4">
                     {stage.icon}
                   </div>
                   <h3 className="font-heading font-bold text-foreground mb-2">{stage.title}</h3>

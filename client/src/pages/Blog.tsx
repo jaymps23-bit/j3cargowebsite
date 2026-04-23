@@ -65,10 +65,10 @@ export default function Blog() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-forest-dark text-white py-16 lg:py-20">
+      <section className="bg-navy-dark text-white py-16 lg:py-20">
         <div className="container">
           <div className="max-w-2xl">
-            <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Blog</p>
+            <p className="text-sky font-semibold text-sm uppercase tracking-wider mb-3">Blog</p>
             <h1 className="font-heading text-4xl md:text-5xl font-extrabold mb-4">
               Shipping Insights & Guides
             </h1>
@@ -85,7 +85,7 @@ export default function Blog() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {BLOG_POSTS.map((post, i) => (
               <SectionReveal key={post.slug} delay={i * 80}>
-                <article className="group bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:shadow-forest/5 transition-all duration-300 h-full flex flex-col">
+                <article className="group bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:shadow-navy/5 transition-all duration-300 h-full flex flex-col">
                   <div className="aspect-[16/10] overflow-hidden">
                     <img
                       src={post.image}
@@ -95,21 +95,21 @@ export default function Blog() {
                   </div>
                   <div className="p-6 flex flex-col flex-1">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="text-xs font-medium text-gold bg-gold/10 px-2.5 py-1 rounded-full">
+                      <span className="text-xs font-medium text-sky bg-sky/10 px-2.5 py-1 rounded-full">
                         {post.category}
                       </span>
                       <span className="text-xs text-muted-foreground flex items-center gap-1">
                         <Calendar className="w-3 h-3" /> {post.date}
                       </span>
                     </div>
-                    <h3 className="font-heading font-bold text-lg text-foreground mb-2 group-hover:text-forest transition-colors leading-snug">
+                    <h3 className="font-heading font-bold text-lg text-foreground mb-2 group-hover:text-navy transition-colors leading-snug">
                       {post.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed flex-1">
                       {post.excerpt}
                     </p>
                     <div className="mt-4 pt-4 border-t border-border">
-                      <span className="text-forest text-sm font-medium flex items-center gap-1 group-hover:text-gold transition-colors">
+                      <span className="text-navy text-sm font-medium flex items-center gap-1 group-hover:text-sky transition-colors">
                         Read article <ArrowRight className="w-3.5 h-3.5" />
                       </span>
                     </div>
@@ -122,7 +122,7 @@ export default function Blog() {
           <SectionReveal delay={200}>
             <p className="text-center text-muted-foreground text-sm mt-12">
               More articles coming soon. Follow us on{" "}
-              <a href="https://www.instagram.com/j3cargo/" target="_blank" rel="noopener noreferrer" className="text-forest font-medium hover:underline">
+              <a href="https://www.instagram.com/j3cargo/" target="_blank" rel="noopener noreferrer" className="text-navy font-medium hover:underline">
                 Instagram
               </a>{" "}
               for the latest updates.
