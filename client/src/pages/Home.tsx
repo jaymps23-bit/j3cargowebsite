@@ -51,7 +51,7 @@ export default function Home() {
               <span className="text-sky">Fast, Reliable, Stress-Free</span>
             </h1>
             <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-              Air freight in 5–7 days. Sea freight for heavy cargo. Free London collection. Customs cleared and delivered to any address in Nigeria.
+              Air freight in 7–10 days to Lagos. Sea freight for heavy cargo. Free London collection. Customs cleared and delivered to any address in Nigeria.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
