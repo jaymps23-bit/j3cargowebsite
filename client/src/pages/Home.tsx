@@ -51,7 +51,7 @@ export default function Home() {
               <span className="text-sky">Fast, Reliable, Stress-Free</span>
             </h1>
             <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-              Air freight in 7–10 days to Lagos. Sea freight for heavy cargo. Free London collection. Customs cleared and delivered to any address in Nigeria.
+              Air freight in 7–10 working days to Lagos, plus 2–3 days outside Lagos. Minimum 8kg at £60. Sea freight for heavy cargo. Free London collection. Customs cleared and delivered to any address in Nigeria.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
@@ -164,9 +164,9 @@ export default function Home() {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   {[
-                    { icon: <Clock className="w-5 h-5" />, title: "Fast Delivery", desc: "5–7 days air freight to Lagos. No unnecessary delays." },
+                    { icon: <Clock className="w-5 h-5" />, title: "Fast Delivery", desc: "7–10 working days air freight to Lagos, 2–3 days extra to other regions." },
                     { icon: <Shield className="w-5 h-5" />, title: "Safe & Secure", desc: "Professional packaging and real-time tracking on every shipment." },
-                    { icon: <Headphones className="w-5 h-5" />, title: "Dedicated Support", desc: "Real people you can call, WhatsApp, or email anytime." },
+                    { icon: <Headphones className="w-5 h-5" />, title: "Dedicated Support", desc: "Real people you can call, WhatsApp, or email. Mon-Fri 9AM-6PM, Sat 10AM-3PM." },
                     { icon: <CheckCircle className="w-5 h-5" />, title: "Customs Handled", desc: "Licensed agents in Nigeria clear your goods — hassle-free." },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-3">

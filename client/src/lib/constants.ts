@@ -96,38 +96,42 @@ export const PROCESS_STEPS = [
 export const FAQ_DATA = [
   {
     question: "How long does air freight take to Nigeria?",
-    answer: "Our transit time to Lagos is 5–7 working days from Friday. Deliveries outside Lagos take 7–10 working days.",
+    answer: "Air freight from the UK to Lagos takes 7–10 working days. For destinations outside Lagos, add an additional 2–3 days. We provide real-time tracking so you can monitor your shipment every step of the way.",
   },
   {
-    question: "Is there a minimum cargo weight?",
-    answer: "No minimum weight requirement. However, we have a fixed minimum charge for shipments under 10kg (from £55 to Lagos).",
+    question: "What is the minimum cargo weight for air freight?",
+    answer: "The minimum cargo weight is 8kg at £60. For shipments over 8kg, the rate is £6 per kg plus a £15 handling fee. We also offer bespoke pricing for hazardous materials and special shipments.",
   },
   {
     question: "Do you collect parcels from customers?",
-    answer: "Yes. We provide free cargo collection within the London area. For locations outside London, collection can be arranged at a small additional fee.",
+    answer: "Yes, we provide free cargo collection from London addresses. We can arrange pickups from your home or business. Outside London, collection fees may apply. Contact us to arrange a pickup time.",
   },
   {
-    question: "Is duty on commercial goods included in the price?",
-    answer: "No, customs duty is not included in our shipping rates. Duty is payable by the receiver in Nigeria based on the goods being imported. We can advise on expected duty costs.",
+    question: "What are your sea freight rates and timelines?",
+    answer: "Sea freight takes 4–6 weeks from the UK to Nigeria. Rates vary depending on your destination and shipment size. We offer both full container loads (FCL) and less-than-container loads (LCL). Contact us for a detailed quote.",
   },
   {
-    question: "How regular is your sea freight service?",
-    answer: "We run regular sea freight shipments. Container loading schedules vary, so contact us for the next available sailing date.",
+    question: "How long does customs clearance take in Nigeria?",
+    answer: "Our licensed customs agents clear air freight shipments in 2 days and container shipments in 5 days. We handle all documentation and paperwork so you don't have to worry about delays.",
   },
   {
-    question: "Do you handle hazardous shipments?",
-    answer: "We do not ship hazardous materials, flammable goods, or items prohibited by UK/Nigerian customs regulations.",
+    question: "Do you handle hazardous materials?",
+    answer: "Yes, we offer bespoke shipping solutions for hazardous materials. These require special handling, packaging, and documentation. Contact us for a custom quote and to discuss your specific requirements.",
   },
   {
-    question: "Do you offer freight insurance?",
-    answer: "Yes, we offer optional cargo insurance for additional peace of mind. Ask our team for a quote when booking your shipment.",
+    question: "What items are prohibited from shipping to Nigeria?",
+    answer: "Prohibited items include used electronics (over 5 years old), certain food products, pharmaceuticals without proper licensing, weapons, and counterfeit goods. For a complete list, check our blog or contact us before shipping.",
   },
   {
-    question: "Can I ship food, cosmetics, or medicines?",
-    answer: "Yes, with restrictions. Food items must be properly sealed and non-perishable. Cosmetics and medicines require proper labelling. Some items may need NAFDAC clearance in Nigeria.",
+    question: "Do you offer shipping insurance?",
+    answer: "Yes, we offer optional cargo insurance for additional protection. Insurance rates depend on the value and nature of your shipment. Ask our team for a quote when you request your shipping rate.",
   },
   {
-    question: "Why do you use volumetric weight?",
-    answer: "Airlines charge based on whichever is greater — actual weight or volumetric weight. This is an industry standard. Volumetric weight is calculated as Length × Width × Height (cm) ÷ 5000.",
+    question: "What payment methods do you accept?",
+    answer: "We accept bank transfers, card payments, and cash on collection. For international shipments, we can arrange payment through WhatsApp or email. Contact us for your preferred payment method.",
+  },
+  {
+    question: "Can I track my shipment in real time?",
+    answer: "Yes, all shipments include real-time tracking. You'll receive updates from pickup in London through to delivery in Nigeria. Use our tracking page or contact us for your shipment reference number.",
   },
 ] as const;
