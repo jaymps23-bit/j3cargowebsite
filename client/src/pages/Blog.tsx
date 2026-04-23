@@ -1,65 +1,18 @@
 /*
- * Blog Page — Afro-Modern Premium
- * Blog listing with sample articles
+ * Blog Page — Navy/Sky palette
+ * Blog listing with real SEO-optimized articles
  */
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
 import { Link } from "wouter";
-import { ArrowRight, Calendar } from "lucide-react";
-
-const BLOG_POSTS = [
-  {
-    slug: "air-freight-rates-nigeria",
-    title: "Understanding Air Freight Rates to Nigeria: What Affects the Price?",
-    excerpt: "Shipping costs depend on more than just weight. Learn how volumetric weight, destination state, and service type affect your final quote.",
-    date: "March 15, 2025",
-    category: "Guides",
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&q=80",
-  },
-  {
-    slug: "packaging-tips-shipping",
-    title: "How to Package Your Items for Safe Shipping to Nigeria",
-    excerpt: "Proper packaging prevents damage and saves money. Here are our top tips for preparing your goods before dropping them off.",
-    date: "February 28, 2025",
-    category: "Tips",
-    image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80",
-  },
-  {
-    slug: "customs-clearance-guide",
-    title: "Nigeria Customs Clearance: What You Need to Know",
-    excerpt: "Importing goods into Nigeria involves customs duty and documentation. We break down the process so you know what to expect.",
-    date: "February 10, 2025",
-    category: "Guides",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80",
-  },
-  {
-    slug: "sea-freight-vs-air-freight",
-    title: "Sea Freight vs Air Freight: Which Is Right for You?",
-    excerpt: "Speed or savings? Compare the two main shipping methods and find out which one suits your cargo and budget.",
-    date: "January 22, 2025",
-    category: "Comparison",
-    image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&q=80",
-  },
-  {
-    slug: "shipping-electronics-nigeria",
-    title: "Shipping Electronics to Nigeria: Rules, Rates, and Tips",
-    excerpt: "TVs, laptops, and appliances are some of the most commonly shipped items. Here's everything you need to know about sending electronics.",
-    date: "January 5, 2025",
-    category: "Tips",
-    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
-  },
-  {
-    slug: "j3-cargo-services-overview",
-    title: "Why J3 Cargo Is the Smart Choice for UK-to-Nigeria Shipping",
-    excerpt: "From free London collection to customs clearance in Nigeria — discover what makes J3 Cargo different from other freight companies.",
-    date: "December 18, 2024",
-    category: "Company",
-    image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=600&q=80",
-  },
-];
+import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { BLOG_POSTS } from "@/lib/blogData";
 
 export default function Blog() {
+  const featuredPost = BLOG_POSTS[0];
+  const otherPosts = BLOG_POSTS.slice(1);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -79,54 +32,137 @@ export default function Blog() {
         </div>
       </section>
 
-      {/* Blog Grid */}
-      <section className="py-20 lg:py-24 bg-white">
+      {/* Featured Article */}
+      <section className="py-12 lg:py-16 bg-white">
         <div className="container">
+          <SectionReveal>
+            <Link href={`/blog/${featuredPost.slug}`} className="group block">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="aspect-[16/10] rounded-2xl overflow-hidden">
+                  <img
+                    src={featuredPost.image}
+                    alt={featuredPost.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-xs font-medium text-navy-dark bg-sky/20 px-3 py-1 rounded-full">
+                      Featured
+                    </span>
+                    <span className="text-xs font-medium text-sky bg-sky/10 px-2.5 py-1 rounded-full">
+                      {featuredPost.category}
+                    </span>
+                  </div>
+                  <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-navy transition-colors leading-snug">
+                    {featuredPost.title}
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    {featuredPost.excerpt}
+                  </p>
+                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
+                    <span className="flex items-center gap-1.5">
+                      <Calendar className="w-3.5 h-3.5" /> {featuredPost.date}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <Clock className="w-3.5 h-3.5" /> {featuredPost.readTime}
+                    </span>
+                  </div>
+                  <span className="text-navy font-semibold flex items-center gap-1.5 group-hover:text-sky transition-colors">
+                    Read full article <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </SectionReveal>
+        </div>
+      </section>
+
+      {/* All Articles Grid */}
+      <section className="py-12 lg:py-16 bg-slate-cool">
+        <div className="container">
+          <SectionReveal>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8">
+              All Articles
+            </h2>
+          </SectionReveal>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {BLOG_POSTS.map((post, i) => (
+            {otherPosts.map((post, i) => (
               <SectionReveal key={post.slug} delay={i * 80}>
-                <article className="group bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:shadow-navy/5 transition-all duration-300 h-full flex flex-col">
-                  <div className="aspect-[16/10] overflow-hidden">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6 flex flex-col flex-1">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-xs font-medium text-sky bg-sky/10 px-2.5 py-1 rounded-full">
-                        {post.category}
-                      </span>
-                      <span className="text-xs text-muted-foreground flex items-center gap-1">
-                        <Calendar className="w-3 h-3" /> {post.date}
-                      </span>
+                <Link href={`/blog/${post.slug}`} className="group block h-full">
+                  <article className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:shadow-navy/5 transition-all duration-300 h-full flex flex-col">
+                    <div className="aspect-[16/10] overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
                     </div>
-                    <h3 className="font-heading font-bold text-lg text-foreground mb-2 group-hover:text-navy transition-colors leading-snug">
-                      {post.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed flex-1">
-                      {post.excerpt}
-                    </p>
-                    <div className="mt-4 pt-4 border-t border-border">
-                      <span className="text-navy text-sm font-medium flex items-center gap-1 group-hover:text-sky transition-colors">
-                        Read article <ArrowRight className="w-3.5 h-3.5" />
-                      </span>
+                    <div className="p-6 flex flex-col flex-1">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="text-xs font-medium text-sky bg-sky/10 px-2.5 py-1 rounded-full">
+                          {post.category}
+                        </span>
+                        <span className="text-xs text-muted-foreground flex items-center gap-1">
+                          <Clock className="w-3 h-3" /> {post.readTime}
+                        </span>
+                      </div>
+                      <h3 className="font-heading font-bold text-lg text-foreground mb-2 group-hover:text-navy transition-colors leading-snug">
+                        {post.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed flex-1">
+                        {post.excerpt}
+                      </p>
+                      <div className="flex items-center justify-between mt-4 pt-4 border-t border-border">
+                        <span className="text-xs text-muted-foreground flex items-center gap-1">
+                          <Calendar className="w-3 h-3" /> {post.date}
+                        </span>
+                        <span className="text-navy text-sm font-medium flex items-center gap-1 group-hover:text-sky transition-colors">
+                          Read <ArrowRight className="w-3.5 h-3.5" />
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </article>
+                  </article>
+                </Link>
               </SectionReveal>
             ))}
           </div>
 
           <SectionReveal delay={200}>
             <p className="text-center text-muted-foreground text-sm mt-12">
-              More articles coming soon. Follow us on{" "}
+              Follow us on{" "}
               <a href="https://www.instagram.com/j3cargo/" target="_blank" rel="noopener noreferrer" className="text-navy font-medium hover:underline">
                 Instagram
               </a>{" "}
-              for the latest updates.
+              for the latest shipping tips and updates.
             </p>
+          </SectionReveal>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-navy-dark text-white">
+        <div className="container text-center">
+          <SectionReveal>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">
+              Have a Question About Shipping?
+            </h2>
+            <p className="text-white/70 max-w-xl mx-auto mb-8">
+              Our team is ready to help. Whether you need a quote, advice on packaging, or information about customs clearance, we are here for you.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/contact">
+                <button className="bg-sky hover:bg-sky-dark text-navy-dark font-semibold px-6 py-3 rounded-lg transition-colors">
+                  Get a Free Quote
+                </button>
+              </Link>
+              <Link href="/faq">
+                <button className="border border-white/30 text-white hover:bg-white/10 px-6 py-3 rounded-lg transition-colors">
+                  View FAQ
+                </button>
+              </Link>
+            </div>
           </SectionReveal>
         </div>
       </section>
