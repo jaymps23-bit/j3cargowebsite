@@ -14,6 +14,7 @@ export const BUSINESS = {
 } as const;
 
 export const IMAGES = {
+  logo: "/manus-storage/j3cargo-logo_94077b7e.jpeg",
   hero: "https://d2xsxph8kpxj0f.cloudfront.net/310519663398925180/diKjdrMj3DyVftmArVy6xQ/hero-banner-M9GiCtgN6YNRH5xLFH2VBn.webp",
   heroFull: "https://d2xsxph8kpxj0f.cloudfront.net/310519663398925180/diKjdrMj3DyVftmArVy6xQ/hero-banner-W5fP2kXThphom35q2Wsamz.png",
   airFreight: "https://d2xsxph8kpxj0f.cloudfront.net/310519663398925180/diKjdrMj3DyVftmArVy6xQ/services-air-freight-mZzTEcrowNkJfMWwshTgFe.webp",

@@ -3,8 +3,8 @@
  * Dark forest green background, gold accents, warm typography
  */
 import { Link } from "wouter";
-import { Phone, Mail, MapPin, Plane, Instagram, Facebook } from "lucide-react";
-import { BUSINESS } from "@/lib/constants";
+import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
+import { BUSINESS, IMAGES } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -14,14 +14,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
-                <Plane className="w-5 h-5 text-gold" />
-              </div>
-              <div>
-                <span className="font-heading text-xl font-bold text-white">J3 Cargo</span>
-                <span className="block text-[11px] text-white/50 -mt-1 tracking-wide">UK → NIGERIA</span>
-              </div>
+            <div className="mb-4">
+              <img
+                src={IMAGES.logo}
+                alt="J3 Cargo"
+                className="h-16 w-auto object-contain rounded-lg"
+              />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mt-4">
               Your trusted partner for shipping from the UK to Nigeria. Air freight, sea freight, packaging, and customs clearance — all handled with care.

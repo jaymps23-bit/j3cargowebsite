@@ -5,9 +5,9 @@
  */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Phone, Plane } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BUSINESS, NAV_LINKS } from "@/lib/constants";
+import { BUSINESS, NAV_LINKS, IMAGES } from "@/lib/constants";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,14 +55,12 @@ export default function Navbar() {
       >
         <div className="container flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 bg-forest rounded-lg flex items-center justify-center group-hover:bg-forest-light transition-colors">
-              <Plane className="w-5 h-5 text-gold" />
-            </div>
-            <div>
-              <span className="font-heading text-xl font-bold text-forest tracking-tight">J3 Cargo</span>
-              <span className="hidden sm:block text-[11px] text-muted-foreground -mt-1 tracking-wide">UK → NIGERIA</span>
-            </div>
+          <Link href="/" className="flex items-center gap-2 group">
+            <img
+              src={IMAGES.logo}
+              alt="J3 Cargo"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop nav */}
