@@ -31,13 +31,13 @@ const ROUTES = [
     title: "Nigeria → UK",
     description: "Export goods from Nigeria to the United Kingdom with ease.",
     airFreight: {
-      timeline: "5–7 days",
-      pricing: "From £80/kg",
+      timeline: "7–10 working days",
+      pricing: "From £5.70/kg",
       features: ["Express service", "Lagos to London", "Full tracking"],
     },
     seaFreight: {
-      timeline: "3–5 weeks",
-      pricing: "From £250 (LCL)",
+      timeline: "6–8 weeks",
+      pricing: "From £300 (LCL)",
       features: ["Cost-effective", "Large volumes", "Customs clearance"],
     },
     icon: "🇳🇬→🇬🇧",
@@ -48,8 +48,8 @@ const ROUTES = [
     description: "Fast air freight from China directly to Nigeria.",
     airFreight: {
       timeline: "10–14 days",
-      pricing: "From £2.50/kg",
-      features: ["Shanghai/Shenzhen to Lagos", "Bulk discounts", "Real-time tracking"],
+      pricing: "From $13/kg",
+      features: ["Guangzhou to Lagos", "Bulk discounts", "Real-time tracking"],
     },
     seaFreight: null,
     icon: "🇨🇳→🇳🇬",
@@ -61,7 +61,7 @@ const ROUTES = [
     airFreight: null,
     seaFreight: {
       timeline: "25–35 days",
-      pricing: "From £800 (FCL)",
+      pricing: "From $140/CBM (LCL)",
       features: ["Full containers", "Shared container options", "Customs handled"],
     },
     icon: "🇨🇳→🇳🇬",
@@ -72,14 +72,10 @@ const ROUTES = [
     description: "Reliable shipping from the United States to Nigeria.",
     airFreight: {
       timeline: "8–12 days",
-      pricing: "From £3.00/kg",
+      pricing: "From $14/kg",
       features: ["East & West Coast", "Door-to-door", "Tracking included"],
     },
-    seaFreight: {
-      timeline: "3–5 weeks",
-      pricing: "From £1,200 (FCL)",
-      features: ["Full containers", "LCL available", "Customs clearance"],
-    },
+    seaFreight: null,
     icon: "🇺🇸→🇳🇬",
   },
   {
@@ -98,26 +94,11 @@ const ROUTES = [
     },
     icon: "🇳🇬→🇺🇸",
   },
-  {
-    id: "europe-nigeria",
-    title: "Europe → Nigeria",
-    description: "Shipping from major European cities to Nigeria.",
-    airFreight: {
-      timeline: "6–10 days",
-      pricing: "From £2.80/kg",
-      features: ["London, Amsterdam, Frankfurt", "Door-to-door", "Tracking"],
-    },
-    seaFreight: {
-      timeline: "3–5 weeks",
-      pricing: "From £600 (LCL)",
-      features: ["Multiple ports", "Customs handled", "Flexible options"],
-    },
-    icon: "🇪🇺→🇳🇬",
-  },
+
   {
     id: "global-bespoke",
     title: "Global Bespoke Shipping",
-    description: "Custom solutions for any origin to Nigeria or beyond.",
+    description: "Custom solutions for any origin to Nigeria or beyond. Includes Europe, Asia, and other regions.",
     airFreight: {
       timeline: "Varies by origin",
       pricing: "Custom quote",
@@ -129,7 +110,7 @@ const ROUTES = [
       features: ["Project cargo", "Heavy lifts", "Consolidated shipments"],
     },
     icon: "🌍→🌎",
-  },
+  }
 ];
 
 export default function Routes() {
