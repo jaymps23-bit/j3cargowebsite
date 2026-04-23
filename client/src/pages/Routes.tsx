@@ -87,11 +87,7 @@ const ROUTES = [
       pricing: "From £4.50/kg",
       features: ["Express service", "Customs handled", "Real-time tracking"],
     },
-    seaFreight: {
-      timeline: "4–6 weeks",
-      pricing: "From £1,500 (FCL)",
-      features: ["Large shipments", "Competitive rates", "Full documentation"],
-    },
+    seaFreight: null,
     icon: "🇳🇬→🇺🇸",
   },
 
