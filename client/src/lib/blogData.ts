@@ -1,3 +1,4 @@
+import matter from "gray-matter";
 // J3 Cargo Blog — SEO-optimized articles about UK-to-Nigeria shipping
 
 export interface BlogPost {
@@ -11,7 +12,7 @@ export interface BlogPost {
   content: string;
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+const STATIC_BLOG_POSTS: BlogPost[] = [
   {
     slug: "complete-guide-shipping-uk-to-nigeria-2026",
     title: "The Complete Guide to Shipping from the UK to Nigeria in 2026",
@@ -507,6 +508,31 @@ For appliances with motors (washing machines, blenders), confirm that they are r
 At J3 Cargo, we handle electronics and appliances regularly and know exactly how to package and ship them safely. Whether you are sending a single laptop or a full set of kitchen appliances, we ensure everything arrives in perfect condition. Contact us for a quote today.`,
   },
 ];
+
+// Load markdown blog posts created via the CMS
+const _mdFiles = import.meta.glob(
+  "../content/blog/*.md",
+  { eager: true, query: "?raw", import: "default" }
+) as Record<string, string>;
+
+const _cmsPosts: BlogPost[] = Object.entries(_mdFiles).map(([filepath, raw]) => {
+  const { data, content } = matter(raw);
+  const slug = filepath.split("/").pop()?.replace(".md", "") ?? "";
+  return {
+    slug: data.slug || slug,
+    title: data.title ?? "",
+    excerpt: data.excerpt ?? "",
+    date: data.date ?? "",
+    category: data.category ?? "Guides",
+    readTime: data.readTime ?? "5 min read",
+    image: data.image ?? "",
+    content: content.trim(),
+  };
+});
+
+export const BLOG_POSTS: BlogPost[] = [...STATIC_BLOG_POSTS, ..._cmsPosts].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((post) => post.slug === slug);
