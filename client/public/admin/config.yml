@@ -2,6 +2,7 @@ backend:
   name: github
   repo: jaymps23-bit/j3cargowebsite
   branch: main
+  base_url: https://authenticator.sveltia-cms.pages.dev
 
 media_folder: client/public/images/blog
 public_folder: /images/blog
