@@ -3,7 +3,7 @@ backend:
   repo: jaymps23-bit/j3cargowebsite
   branch: main
   auth_type: pkce
-  app_id: REPLACE_WITH_YOUR_GITHUB_OAUTH_CLIENT_ID
+  app_id: Ov23lirgDROzpNCZlsax
 
 media_folder: client/public/images/blog
 public_folder: /images/blog
