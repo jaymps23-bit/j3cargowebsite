@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: jaymps23-bit/j3cargowebsite
+  branch: main
+  auth_type: pkce
+  app_id: REPLACE_WITH_YOUR_GITHUB_OAUTH_CLIENT_ID
+
+media_folder: client/public/images/blog
+public_folder: /images/blog
+
+collections:
+  - name: blog
+    label: Blog Posts
+    folder: client/src/content/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Excerpt, name: excerpt, widget: text, hint: "1-2 sentence summary shown on the blog listing page" }
+      - { label: Publish Date, name: date, widget: date, format: "MMMM D, YYYY" }
+      - label: Category
+        name: category
+        widget: select
+        options: [Guides, Tips, Customs, News, Comparison]
+      - { label: Read Time, name: readTime, widget: string, default: "5 min read", hint: 'e.g. "5 min read"' }
+      - { label: Cover Image URL, name: image, widget: string, hint: "Paste a free image URL from unsplash.com" }
+      - { label: Content, name: body, widget: markdown }
