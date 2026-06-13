@@ -29,7 +29,7 @@ This guide covers everything you need to know about shipping from the UK to Nige
 
 There are two primary ways to ship cargo from the UK to Nigeria: **air freight** and **sea freight**. Each has its advantages depending on what you are sending, how quickly you need it delivered, and your budget.
 
-**Air freight** is the fastest option. Parcels shipped by air from London typically arrive in Lagos within 7 to 10 working days. Deliveries to other Nigerian states take an additional 2 to 3 days beyond Lagos delivery. Air freight is ideal for smaller parcels, urgent shipments, and items that are not excessively heavy or bulky. Rates start from £60 for shipments up to 8kg, then £6/kg plus £15 handling fee for heavier items to Lagos, with rates increasing for more remote states.
+**Air freight** is the fastest option. Parcels shipped by air from London typically arrive in Lagos within 7 to 10 working days. Deliveries to other Nigerian states take an additional 2 to 3 days beyond Lagos delivery. Air freight is ideal for smaller parcels, urgent shipments, and items that are not excessively heavy or bulky. Rates start from £65 for shipments up to 8kg, then £6.50/kg plus £15 handling fee for heavier items to Lagos, with rates increasing for more remote states.
 
 **Sea freight** is the cost-effective choice for large or heavy shipments. If you are sending furniture, vehicles, appliances, or commercial goods in bulk, sea freight offers significantly lower per-kilogram rates. The trade-off is time — sea freight from the UK to Lagos typically takes 4 to 6 weeks. You can choose between a full container (FCL) or share container space with other shippers (LCL).
 
@@ -93,7 +93,7 @@ Sea freight, by contrast, takes 4 to 6 weeks from the UK to Nigeria. This includ
 
 ## Cost: Sea Freight Wins
 
-Sea freight is substantially cheaper per kilogram than air freight, especially for heavy or bulky items. While air freight rates to Lagos start from £60 for up to 8kg (then £6/kg plus £15 handling), sea freight rates are calculated per cubic metre and work out to a fraction of the cost for large shipments.
+Sea freight is substantially cheaper per kilogram than air freight, especially for heavy or bulky items. While air freight rates to Lagos start from £65 for up to 8kg (then £6.50/kg plus £15 handling), sea freight rates are calculated per cubic metre and work out to a fraction of the cost for large shipments.
 
 For example, shipping a washing machine by air freight could cost several hundred pounds based on its weight. The same item shipped by sea would cost significantly less, even after accounting for the longer transit time.
 
@@ -349,9 +349,9 @@ This is why efficient packaging matters. Reducing the dimensions of your package
 
 ## Factor 2: Destination State in Nigeria
 
-Shipping rates to Nigeria vary by destination state. Lagos, as the primary port of entry, has the lowest rates — currently starting from £5.00 per kilogram for delivery and £4.70 per kilogram for collection by the receiver.
+Shipping rates to Nigeria vary by destination state. Lagos, as the primary port of entry, has the lowest rates — currently starting from £6.50 per kilogram for delivery and £6.20 per kilogram for collection by the receiver.
 
-States in the South-West region (Oyo, Ogun, Ondo, Osun, Ekiti) typically cost £5.30 to £5.50 per kilogram. South-East and South-South states (Anambra, Imo, Rivers, Delta, Edo) are around £6.00 per kilogram. Northern states (Kano, Kaduna, Sokoto, Borno) range from £6.50 to £7.00 per kilogram.
+States in the South-West region (Oyo, Ogun, Ondo, Osun, Ekiti) typically cost £6.80 to £7.00 per kilogram. South-East and South-South states (Anambra, Imo, Rivers, Delta, Edo) are around £7.50 per kilogram. Northern states (Kano, Kaduna, Sokoto, Borno) range from £8.00 to £8.50 per kilogram.
 
 The price difference reflects the additional inland transport costs required to deliver goods beyond Lagos.
 
