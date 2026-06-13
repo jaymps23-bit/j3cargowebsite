@@ -26,7 +26,7 @@ const SERVICE_IMAGES = [
 
 const SERVICE_DETAILS = [
   {
-    extra: "Our air freight service is the fastest way to get your goods to Nigeria. Parcels are collected from your location in London (free of charge), professionally repackaged at our Bow warehouse, and shipped via air cargo. You'll receive a tracking number to monitor your shipment every step of the way. Transit time to Lagos is 7–10 working days, with deliveries to other states taking an additional 2–3 days. Rates start from £60 for shipments up to 8kg, then £6/kg plus £15 handling fee for heavier items.",
+    extra: "Our air freight service is the fastest way to get your goods to Nigeria. Parcels are collected from your location in London (free of charge), professionally repackaged at our Bow warehouse, and shipped via air cargo. You'll receive a tracking number to monitor your shipment every step of the way. Transit time to Lagos is 7–10 working days, with deliveries to other states taking an additional 2–3 days. Rates start from £65 for shipments up to 8kg, then £6.50/kg plus £15 handling fee for heavier items.",
   },
   {
     extra: "Sea freight is the cost-effective choice for heavy, bulky, or large-volume shipments. We handle vehicles, appliances, furniture, and commercial goods. Choose between full container load (FCL) or shared container options depending on your cargo size. Our team manages all documentation and coordinates with our partners at Nigerian ports for smooth clearance.",

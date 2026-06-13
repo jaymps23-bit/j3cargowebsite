@@ -100,7 +100,7 @@ export const FAQ_DATA = [
   },
   {
     question: "What is the minimum cargo weight for air freight?",
-    answer: "The minimum cargo weight is 8kg at £60. For shipments over 8kg, the rate is £6 per kg plus a £15 handling fee. We also offer bespoke pricing for hazardous materials and special shipments.",
+    answer: "The minimum cargo weight is 8kg at a flat rate of £65. For shipments over 8kg, the rate is £6.50 per kg plus a £15 handling fee. We also offer bespoke pricing for hazardous materials and special shipments.",
   },
   {
     question: "Do you collect parcels from customers?",

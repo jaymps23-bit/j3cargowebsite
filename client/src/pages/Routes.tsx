@@ -16,7 +16,7 @@ const ROUTES = [
     description: "Our flagship route. Fast, reliable, and cost-effective.",
     airFreight: {
       timeline: "7–10 days to Lagos",
-      pricing: "From £60 (up to 8kg)",
+      pricing: "From £65 (up to 8kg)",
       features: ["Real-time tracking", "Free London collection", "Door-to-door delivery"],
     },
     seaFreight: {

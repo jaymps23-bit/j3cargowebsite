@@ -51,7 +51,7 @@ export default function Home() {
               <span className="text-sky">Fast, Reliable, Stress-Free</span>
             </h1>
             <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-              Air freight in 7–10 working days to Lagos, plus 2–3 days outside Lagos. Minimum 8kg at £60. Sea freight for heavy cargo. Free London collection. Customs cleared and delivered to any address in Nigeria.
+              Air freight in 7–10 working days to Lagos, plus 2–3 days outside Lagos. Flat rate £65 up to 8kg. Sea freight for heavy cargo. Free London collection. Customs cleared and delivered to any address in Nigeria.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
