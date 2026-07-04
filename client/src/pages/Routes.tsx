@@ -5,6 +5,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, Globe, Plane, Ship, Clock, DollarSign, Check } from "lucide-react";
@@ -112,6 +113,12 @@ const ROUTES = [
 export default function Routes() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Shipping Routes — UK, China & USA to Nigeria"
+        description="J3 Cargo international shipping routes: UK to Nigeria, China to Nigeria, USA to Nigeria. Air freight and sea freight options with competitive pricing and reliable delivery."
+        path="/routes"
+        keywords="UK to Nigeria shipping route, China to Nigeria cargo, USA to Nigeria freight, international shipping Nigeria, air freight routes"
+      />
       <Navbar />
 
       {/* Hero */}

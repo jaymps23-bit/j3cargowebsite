@@ -6,6 +6,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { BUSINESS } from "@/lib/constants";
 import { Search, Package, MapPin, Clock, CheckCircle, MessageCircle } from "lucide-react";
@@ -28,6 +29,12 @@ export default function Track() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Track Your Shipment — J3 Cargo"
+        description="Track your J3 Cargo shipment in real time. Enter your tracking number to see the status of your UK to Nigeria delivery."
+        path="/track"
+        keywords="J3 Cargo tracking, track shipment Nigeria, cargo tracking UK Nigeria"
+      />
       <Navbar />
 
       {/* Hero */}

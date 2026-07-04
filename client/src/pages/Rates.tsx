@@ -6,6 +6,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Search, ArrowRight, Info } from "lucide-react";
@@ -79,6 +80,12 @@ export default function Rates() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Shipping Rates — UK to Nigeria Pricing by State"
+        description="Transparent shipping rates from UK to Nigeria. Per-kg pricing for all 36 Nigerian states. Air freight from £65. Fixed prices for TVs, laptops, appliances. Free London collection."
+        path="/rates"
+        keywords="UK to Nigeria shipping rates, cargo cost Lagos, shipping price per kg Nigeria, how much to ship to Nigeria, air freight cost Nigeria"
+      />
       <Navbar />
 
       {/* Hero */}

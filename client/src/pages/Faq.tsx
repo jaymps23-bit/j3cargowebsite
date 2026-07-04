@@ -6,6 +6,8 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
+import { FAQSchema } from "@/components/StructuredData";
 import { FAQ_DATA, BUSINESS } from "@/lib/constants";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -16,6 +18,13 @@ export default function Faq() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="FAQ — UK to Nigeria Shipping Questions Answered"
+        description="Frequently asked questions about shipping from UK to Nigeria. Learn about delivery times, pricing, customs clearance, prohibited items, tracking, and insurance with J3 Cargo."
+        path="/faq"
+        keywords="UK Nigeria shipping FAQ, how long to ship to Nigeria, shipping costs Nigeria, customs clearance questions, prohibited items Nigeria"
+      />
+      <FAQSchema />
       <Navbar />
 
       {/* Hero */}

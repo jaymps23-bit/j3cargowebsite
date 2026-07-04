@@ -5,6 +5,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
 import { IMAGES, BUSINESS } from "@/lib/constants";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,12 @@ import { ArrowRight, Target, Heart, Zap, Globe } from "lucide-react";
 export default function About() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="About J3 Cargo — UK to Nigeria Shipping Experts"
+        description="Learn about J3 Cargo Services, a trusted UK-based cargo company specialising in air freight and sea freight shipping from London to Nigeria. Based in Bow, East London."
+        path="/about"
+        keywords="J3 Cargo about, UK Nigeria shipping company, cargo company London, Bow London shipping"
+      />
       <Navbar />
 
       {/* Hero */}

@@ -5,6 +5,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
 import { IMAGES, SERVICES, BUSINESS } from "@/lib/constants";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -42,6 +43,12 @@ const SERVICE_DETAILS = [
 export default function Services() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Shipping Services — Air Freight & Sea Freight UK to Nigeria"
+        description="J3 Cargo shipping services: air freight (5-7 days, from £65), sea freight (4-6 weeks), professional packaging, and customs clearance. Free London collection. Door-to-door delivery across Nigeria."
+        path="/services"
+        keywords="air freight UK to Nigeria, sea freight Nigeria, shipping services London, cargo packaging, customs clearance Nigeria, ship goods to Lagos"
+      />
       <Navbar />
 
       {/* Hero */}

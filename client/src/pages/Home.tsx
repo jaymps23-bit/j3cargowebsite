@@ -10,6 +10,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
+import { OrganizationSchema, LocalBusinessSchema, ServiceSchema } from "@/components/StructuredData";
 import { IMAGES, SERVICES, PROCESS_STEPS, FAQ_DATA, BUSINESS } from "@/lib/constants";
 import { useState } from "react";
 import { Star, Quote } from "lucide-react";
@@ -26,6 +28,15 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="J3 Cargo | UK to Nigeria Shipping — Fast, Reliable, Stress-Free"
+        description="J3 Cargo offers fast, reliable air freight and sea freight shipping from the UK to Nigeria. Free London collection, customs clearance, and door-to-door delivery to all 36 Nigerian states. Air freight from £65."
+        path="/"
+        keywords="UK to Nigeria shipping, air freight Nigeria, sea freight Nigeria, cargo to Nigeria, J3 Cargo, ship to Lagos, customs clearance Nigeria, shipping from London to Nigeria"
+      />
+      <OrganizationSchema />
+      <LocalBusinessSchema />
+      <ServiceSchema />
       <Navbar />
 
       {/* ===== HERO ===== */}

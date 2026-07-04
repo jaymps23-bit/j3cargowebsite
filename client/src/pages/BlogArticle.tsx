@@ -6,6 +6,8 @@ import { useParams, Link, useLocation } from "wouter";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
+import { ArticleSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { getPostBySlug, getRelatedPosts } from "@/lib/blogData";
 import { ArrowLeft, ArrowRight, Calendar, Clock, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -90,6 +92,29 @@ export default function BlogArticle() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title={post.title}
+        description={post.excerpt}
+        path={`/blog/${post.slug}`}
+        type="article"
+        image={post.image}
+        publishedDate={post.date}
+        keywords={`UK Nigeria shipping, ${post.category}, ${post.title.toLowerCase().split(" ").slice(0, 4).join(", ")}`}
+      />
+      <ArticleSchema
+        title={post.title}
+        description={post.excerpt}
+        slug={post.slug}
+        datePublished={post.date}
+        image={post.image}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Blog", url: "/blog" },
+          { name: post.title, url: `/blog/${post.slug}` },
+        ]}
+      />
       <Navbar />
 
       {/* Hero */}

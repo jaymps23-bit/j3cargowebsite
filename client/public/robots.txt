@@ -1,0 +1,29 @@
+# J3 Cargo Services - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://j3cargo.com/sitemap.xml
+
+# AI Crawlers - explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Block admin paths
+Disallow: /admin/
+Disallow: /oauth/

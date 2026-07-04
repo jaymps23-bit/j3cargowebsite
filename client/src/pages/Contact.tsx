@@ -5,6 +5,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
 import QuoteForm from "@/components/QuoteForm";
 import { BUSINESS } from "@/lib/constants";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
@@ -13,6 +14,12 @@ import { Button } from "@/components/ui/button";
 export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Contact J3 Cargo — Get a Shipping Quote"
+        description="Contact J3 Cargo for a free shipping quote. Call +44 78 2371 8667, email info@j3cargo.com, or visit us at 429-431 Wick Lane, Bow, London. Free London collection available."
+        path="/contact"
+        keywords="J3 Cargo contact, shipping quote UK Nigeria, cargo company London phone number, Bow London shipping"
+      />
       <Navbar />
 
       {/* Hero */}

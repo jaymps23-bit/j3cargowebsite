@@ -5,6 +5,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionReveal from "@/components/SectionReveal";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "wouter";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { BLOG_POSTS } from "@/lib/blogData";
@@ -15,6 +16,12 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Blog — UK to Nigeria Shipping Guides & Tips"
+        description="Expert guides on shipping from UK to Nigeria. Learn about air freight vs sea freight, customs clearance, prohibited items, costs, and delivery times."
+        path="/blog"
+        keywords="UK Nigeria shipping blog, shipping guide Nigeria, air freight tips, customs clearance guide, cargo shipping advice"
+      />
       <Navbar />
 
       {/* Hero */}
