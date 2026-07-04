@@ -1,4 +1,3 @@
-import matter from "gray-matter";
 // J3 Cargo Blog — SEO-optimized articles about UK-to-Nigeria shipping
 
 export interface BlogPost {
@@ -509,6 +508,23 @@ At J3 Cargo, we handle electronics and appliances regularly and know exactly how
   },
 ];
 
+// Simple frontmatter parser (no Node.js Buffer dependency)
+function parseFrontmatter(raw: string): { data: Record<string, string>; content: string } {
+  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+  if (!match) return { data: {}, content: raw };
+  const frontmatter = match[1];
+  const content = match[2];
+  const data: Record<string, string> = {};
+  for (const line of frontmatter.split("\n")) {
+    const colonIdx = line.indexOf(":");
+    if (colonIdx === -1) continue;
+    const key = line.slice(0, colonIdx).trim();
+    const value = line.slice(colonIdx + 1).trim().replace(/^["']|["']$/g, "");
+    data[key] = value;
+  }
+  return { data, content };
+}
+
 // Load markdown blog posts created via the CMS
 const _mdFiles = import.meta.glob(
   "../content/blog/*.md",
@@ -516,7 +532,7 @@ const _mdFiles = import.meta.glob(
 ) as Record<string, string>;
 
 const _cmsPosts: BlogPost[] = Object.entries(_mdFiles).map(([filepath, raw]) => {
-  const { data, content } = matter(raw);
+  const { data, content } = parseFrontmatter(raw);
   const slug = filepath.split("/").pop()?.replace(".md", "") ?? "";
   return {
     slug: data.slug || slug,
